@@ -1,0 +1,44 @@
+# Code Workflow
+
+This folder contains cleaned R scripts for loading, cleaning, summarizing, and visualizing the vineyard soil datasets.
+
+## Script Order
+
+1. `01_load_and_clean_data.R`  
+   Loads the raw datasets, standardizes variable names, cleans treatment and collection labels, and saves processed files.
+
+2. `02_microbial_biomass_analysis.R`  
+   Analyzes microbial biomass measurements and creates summary tables and plots.
+
+3. `03_carbon_nitrogen_analysis.R`  
+   Analyzes carbon:nitrogen ratio data across treatments, years, and sampling stages.
+
+4. `04_soil_chemistry_analysis.R`  
+   Analyzes pH and any additional soil chemistry variables included in the project.
+
+5. `05_make_figures.R`  
+   Saves the final polished figures used in the main project README.
+
+## Cleaning Conventions
+
+The scripts standardize:
+- treatment codes
+- sampling-stage labels
+- year formatting
+- column names
+
+Treatment codes:
+- `HW` = High Water Cover Crop
+- `LW` = Low Water Cover Crop
+- `NCC` = No Cover Crop
+- `OF` = Organic Fertilizer
+- `SF` = Synthetic Fertilizer
+- `NF` = No Fertilizer
+- `H` = Herbicide
+- `NH` = No Herbicide
+
+Sampling stages:
+- Bud Break
+- Bloom
+- Veraison
+- Harvest
